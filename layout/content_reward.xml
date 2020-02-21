@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/semi_transparent">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/icn_back" />
+
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="情境獎勵"
+            android:textColor="@android:color/black"
+            android:textSize="10pt" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <ImageButton
+            android:id="@+id/button_bedroom"
+            android:layout_width="50dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/button_bedroom" />
+
+        <ImageButton
+            android:id="@+id/button_kitchen"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/button_kitchen" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/text_bedroom"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:text="需解鎖3個以上的物件：\n睡衣、枕頭、紗窗、窗簾、\n洗臉盆、掛鐘、泰迪熊、\n單人沙發床"
+            android:textSize="10dp"
+            app:srcCompat="@drawable/button_bedroom" />
+
+        <TextView
+            android:id="@+id/text_kitchen"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:text="需解鎖3個以上的物件：\n圍裙、平底鍋、鍋、冰箱、\n盤子、水壺、水灌、格子鬆餅烘烤模、托盤、烤麵包機、茶壺、計時器"
+            android:textSize="10dp"
+            app:srcCompat="@drawable/button_kitchen" />
+    </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <ImageButton
+                android:id="@+id/button_music"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="2"
+                android:background="#00000000"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/button_music" />
+
+            <ImageButton
+                android:id="@+id/button_office"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="2"
+                android:background="#00000000"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/button_office" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/text_music"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:textSize="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="需解鎖3個以上的物件：\n手風琴、原聲吉他、斑鳩琴、低音管、大提琴、鼓、鼓槌、電吉他、笛、法國號、鑼、平臺型鋼琴、口琴、豎琴麥克風、雙簧管、陶笛、薩克斯風"
+            app:srcCompat="@drawable/button_bedroom" />
+
+        <TextView
+            android:id="@+id/text_office"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:textSize="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="需解鎖3個以上的物件：\n活頁夾、書架、電腦鍵盤、桌子、桌上型電腦、文件、掌上型電腦、螢幕、滑鼠、影印機、印表機、投影機、書套、檯燈"
+            app:srcCompat="@drawable/button_kitchen" />
+    </LinearLayout>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/manachan_gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        app:srcCompat="@drawable/mana_stand" />
+
+</LinearLayout>

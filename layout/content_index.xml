@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/index_background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:src="@drawable/homepage_logo" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+    <ImageButton
+        android:id="@+id/go_page_camera"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/button_page01_1" />
+
+    <ImageButton
+        android:id="@+id/go_page_fifty"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/button_page01_2" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <ImageButton
+        android:id="@+id/go_page_reward"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:onClick="onClick"
+        app:srcCompat="@drawable/button_page01_3" />
+
+        <ImageButton
+            android:id="@+id/go_page_learn"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:onClick="onClick"
+            app:srcCompat="@drawable/button_page01_4" />
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/manachan_gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        app:srcCompat="@drawable/mana_stand" />
+
+
+
+</LinearLayout>

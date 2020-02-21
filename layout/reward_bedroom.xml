@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/semi_transparent">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="獲得房間小知識獎勵！"
+            android:textColor="@android:color/black"
+            android:textSize="10pt" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="你知道嗎？「畳」，是日本計算室內大小最常用的單位。1畳指的就是1張榻榻米的大小。(182cm×91cm)。而6畳，則是一般1R或是1K標準的房間大小。不過由於室內大小也包含了走廊等等空間，所以雖然標記為6畳，實際的房間正中央是會小於6畳的。"
+        android:textSize="10pt" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/manachan_gif"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_gravity="end"
+        app:srcCompat="@drawable/mana_clap" />
+
+</LinearLayout>

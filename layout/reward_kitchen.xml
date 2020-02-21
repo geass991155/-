@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/semi_transparent">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="獲得廚房小知識獎勵！"
+            android:textColor="@android:color/black"
+            android:textSize="10pt" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="你知道嗎？日本人在吃西瓜時要撒鹽。在日本人眼中，他們認為甜的西瓜撒上鹹鹹的鹽吃起來更美味！"
+        android:textSize="10pt" />
+
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/manachan_gif"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_gravity="end"
+        app:srcCompat="@drawable/mana_clap" />
+
+</LinearLayout>
